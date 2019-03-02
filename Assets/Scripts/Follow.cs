@@ -5,6 +5,7 @@ using UnityEngine;
 public class Follow : MonoBehaviour {
 
     public float speed;
+    public float stoppingDistance;
 
     private Transform target;
 
@@ -17,7 +18,7 @@ public class Follow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Vector2.Distance(transform.position, target.position) > 5)
+        if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         }
