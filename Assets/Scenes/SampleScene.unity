@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5c3b39497dd03241ad598a6c04e4f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 10
 --- !u!212 &107770604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -241,8 +241,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a74ae804bcc02b748bfb6e7ba58fa000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 10
   stoppingDistance: 5
+  retreatingDistance: 2
+  timeBtwnShots: 2
+  StartingTimeBtwnShots: 2
+  projectile: {fileID: 1300936310687144, guid: c185171a8add6ce4d9e4305960b7d73e, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
